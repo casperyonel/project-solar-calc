@@ -32,11 +32,12 @@ function materialsNeeded() {
 function showStuff(el) {
     var elementID = document .getElementById(el);
     for (i = 0; i < elementID.length; i++) {
-    if (elementID[i].selected === true) {
+    if (elementID[i].selected) {
         var x = elementID[i].text
     }
     }
     return x;
+    // not needed
 }
 
 function showMore(el) {
