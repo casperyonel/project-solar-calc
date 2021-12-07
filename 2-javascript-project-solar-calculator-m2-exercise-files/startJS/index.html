@@ -14,8 +14,27 @@ Wall to Wall <input id="across" type="number"><br>
 
 Height of Walls <input id="height" type="number"><br>
 
-<button onclick="materialsNeeded()">Hello</button>
 
+<h2>What is your home state?</h2>
+<select id="state">
+    <option value="WY">Wyoming</option>
+    <option value="UT">Utah</option>
+    <option value="UD">Idaho</option>
+    <option value="MT">Montana</option>
+    <option value="CO">Colorado</option>
+</select>
+
+<h2>Your Home Style</h2>
+<select id="home">
+    <option value="single">Single Family</option>
+    <option value="apartment">Apt or Condo</option>
+    <option value="multi">Multi-Family</option>
+    <option value="mobile">Mobile Home</option>
+</select>
+<br>
+<button onclick="evaluatePage()">Run Script</button>
+
+<div id="output"></div>
 
 </body>
 <script type="text/javascript" src="js/main.js"></script>

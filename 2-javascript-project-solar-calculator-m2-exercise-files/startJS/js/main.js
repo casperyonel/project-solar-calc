@@ -24,3 +24,24 @@ function materialsNeeded() {
     console.log('Carpet needed is ' + carpetNeeded + ' sqft')
     console.log('Paint needed is ' + paintNeeded + ' sqft')
 }
+
+
+
+
+
+function showStuff(el) {
+    var elementID = document .getElementById(el);
+    for (i = 0; i < elementID.length; i++) {
+    if (elementID[i].selected === true) {
+        var x = elementID[i].text
+    }
+    }
+    return x;
+}
+
+function evaluatePage() {
+    var feedbackState = showStuff('state')
+    var feedbackHome = showStuff('home')
+    document.getElementById('output').innerHTML = feedbackState '<br>' + feedbackHome
+}
+
